@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    @SuppressLint("MissingSuperCall")
-    @Override
+    @SuppressLint("MissingSuperCall") // this sets onClickListener on the back button
+    @Override                       // this code adds the dialog box on the back button
     public void onBackPressed(){
         new AlertDialog.Builder(MainActivity.this)
                 .setIcon(R.drawable.baseline_warning_24)
