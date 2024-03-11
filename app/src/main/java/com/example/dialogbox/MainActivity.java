@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                finish();
+                                finish();  //exits the app
                             }
                         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
+                                dialog.dismiss(); //removes the dialog box
                             }
                         }).setNeutralButton("Help", new DialogInterface.OnClickListener() {
                             @Override
